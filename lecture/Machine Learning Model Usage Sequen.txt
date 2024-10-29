@@ -1,0 +1,34 @@
+Machine Learning Model Usage Sequence
+
+1. EDA
+- Check missing values ​​by feature
+- Check data type and distribution by feature
+
+2. Data preprocessing
+Feature
+Normalize data by feature and visualize normal distribution (histogram, QQ-plot)
+Remove outliers by feature
+If skew is high for continuous data by feature, log transformation is performed
+One-hot encoding is performed for categorical data by feature
+Analyze correlation between features and visualize heatmap
+Check VIF (Variance Inflation Factor) between features to check multi-collinearity (Multi-colinearity)
+
+Target
+Normalize target data and visualize normal distribution (histogram, QQ-plot)
+Scaling target data (Standarization, Normalizationm, Log)
+
+Feature-Target
+Analyze correlation between feature and target and visualize heatmap
+
+3. Feature engineering
+Feature Selection
+Mainly select features with high correlation with target
+Features that can reflect target characteristics Selection(Knowledge-based)
+Feature Extraction
+Check the explanation variance and explanation variance ratio according to the number of PCA components, then select the number of PCA components (0.8 or higher)
+
+4. Model Training
+
+5. Model Evaluation
+
+6. Check Feature importance
